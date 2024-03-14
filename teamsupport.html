@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Support - Engineering Team</title>
+    <link rel="stylesheet" href="teamsupportstyle.css" />
+</head>
+<body>
+
+<header class="header">
+    <div class="container">
+        <h1 class="header__title">Engineering Team</h1>
+        <nav class="header__nav">
+            <ul class="header__menu">
+                <li class="header__menu-item"><a href="#" class="header__menu-link" data-target="about">Team A</a></li>
+                <li class="header__menu-item"><a href="#" class="header__menu-link" data-target="team">Team B</a></li>
+                <li class="header__menu-item"><a href="#" class="header__menu-link" data-target="contact">Team C</a></li>
+                <li class="header__menu-item"><a href="#" class="header__menu-link" data-target="contact">Team D</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<section id="about" class="about">
+    <div class="container">
+        <h2>Team A</h2>
+        <div class="team__member">
+            <img src="team_a_member1.jpg" alt="Team A Member 1">
+            <h3>John Doe</h3>
+            <p>Lead Engineer</p>
+        </div>
+        <div class="team__member">
+            <img src="team_a_member2.jpg" alt="Team A Member 2">
+            <h3>Jane Smith</h3>
+            <p>Software Developer</p>
+        </div>
+    </div>
+</section>
+
+<section id="team" class="team">
+    <div class="container">
+        <h2>Team B</h2>
+        <div class="team__member">
+            <img src="team_b_member1.jpg" alt="Team B Member 1">
+            <h3>Michael Johnson</h3>
+            <p>Project Manager</p>
+        </div>
+        <div class="team__member">
+            <img src="team_b_member2.jpg" alt="Team B Member 2">
+            <h3>Emily Wilson</h3>
+            <p>Hardware Engineer</p>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="contact">
+    <div class="container">
+        <h2>Team C</h2>
+        <div class="team__member">
+            <img src="team_c_member1.jpg" alt="Team C Member 1">
+            <h3>David Brown</h3>
+            <p>QA Engineer</p>
+        </div>
+        <div class="team__member">
+            <img src="team_c_member2.jpg" alt="Team C Member 2">
+            <h3>Lisa Jones</h3>
+            <p>Electrical Engineer</p>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="contact">
+    <div class="container">
+        <h2>Team D</h2>
+        <div class="team__member">
+            <img src="team_d_member1.jpg" alt="Team D Member 1">
+            <h3>Mark Taylor</h3>
+            <p>UI/UX Designer</p>
+        </div>
+        <div class="team__member">
+            <img src="team_d_member2.jpg" alt="Team D Member 2">
+            <h3>Sarah White</h3>
+            <p>System Administrator</p>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <p>&copy; 2024 Team Support. All rights reserved.</p>
+    </div>
+</footer>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const menuLinks = document.querySelectorAll('.header__menu-link');
+
+        menuLinks.forEach(link => {
+            link.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('data-target');
+                const targetSection = document.getElementById(targetId);
+
+                // Hide all sections
+                document.querySelectorAll('section').forEach(section => {
+                    section.classList.remove('show');
+                });
+
+                // Show the clicked section
+                targetSection.classList.add('show');
+            });
+        });
+    });
+</script>
+
+</body>
+</html>

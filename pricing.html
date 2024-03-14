@@ -1,0 +1,102 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing</title>
+    <link rel="stylesheet" href="pricingstyle.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="header">
+    <div class="container">
+        <div class="header__logo"><i class='fas fa-city'></i>MDC</div>
+        <nav class="navbar">
+            <div class="navbar__container">
+                <ul class="navbar__menu">
+                    <li class="navbar__btn">
+                        <button class="pricing-button">Pricing</button>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        
+    </div>
+</header>
+
+<section id="default-materials" class="pricing-section show">
+    <div class="container">
+        <h2>Default Materials Pricing</h2>
+        <table class="pricing-table">
+            <thead>
+                <tr>
+                    <th>Material</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Material 1</td>
+                    <td>$10</td>
+                </tr>
+                <tr>
+                    <td>Material 2</td>
+                    <td>$15</td>
+                </tr>
+                <!-- Add more rows as needed -->
+            </tbody>
+        </table>
+    </div>
+</section>
+
+<section id="custom-materials" class="pricing-section">
+    <div class="container">
+        <h2>Customized Materials Pricing</h2>
+        <table class="pricing-table">
+            <thead>
+                <tr>
+                    <th>Material</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Custom Material 1</td>
+                    <td>$20</td>
+                </tr>
+                <tr>
+                    <td>Custom Material 2</td>
+                    <td>$25</td>
+                </tr>
+                <!-- Add more rows as needed -->
+            </tbody>
+        </table>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <p>&copy; 2024 Your Company. All rights reserved.</p>
+    </div>
+</footer>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const pricingButton = document.querySelector('.pricing-button');
+        const defaultMaterialsSection = document.getElementById('default-materials');
+        const customMaterialsSection = document.getElementById('custom-materials');
+
+        pricingButton.addEventListener('click', function () {
+            defaultMaterialsSection.classList.toggle('show');
+            customMaterialsSection.classList.toggle('show');
+        });
+    });
+</script>
+
+</body>
+</html>

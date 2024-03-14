@@ -1,0 +1,185 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #005aa7, #fffde4); /* Elegant gradient background */
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background: linear-gradient(135deg, #333, #005aa7); /* Gradient background for header */
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+}
+
+
+.header__logo {
+    background: #ff8177;
+    background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 2rem;
+}
+.navbar{
+   
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+.navbar__container{
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 50px;
+}
+.navbar__menu{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    text-align: center;
+}
+
+.navbar__item{
+    height: 80px;
+}
+
+.navbar__links{
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    padding: 0 1rem;
+    height: 100%;
+}
+
+.navbar__btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1rem;
+    width: 100%;
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    padding: 10px 20px;
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background: #f77062;
+    color: #fff;
+}
+.button::hover{
+    background: #4837ff;
+    transition: all 0.3s ease;
+}
+.navbar__links:hover{
+    color: #f77062;
+    transition: all 0.3s ease;
+}
+
+.header__menu {
+    list-style: none;
+    display: flex;
+}
+
+.header__menu-item {
+    margin-left: 20px;
+}
+
+.header__menu-link {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+.pricing-button {
+    background-color: #fff;
+    color: #333;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.pricing-button:hover {
+    background-color: #f0f0f0;
+}
+
+.pricing-section {
+    display: none;
+    margin-top: 20px;
+}
+
+.pricing-section.show {
+    display: block;
+}
+
+.pricing-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.pricing-table th,
+.pricing-table td {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.pricing-table th {
+    background-color: #f0f0f0;
+}
+
+.pricing-table td {
+    background-color: #fff;
+}
+
+.pricing-table td.highlight {
+    background-color: #f0f0f0;
+}
+
+footer {
+    background: linear-gradient(135deg, #005aa7, #fffde4); /* Gradient background for footer */
+    padding: 20px 0;
+    text-align: center;
+    color: #333;
+    margin-top: 50px;
+}
